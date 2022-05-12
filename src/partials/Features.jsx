@@ -33,7 +33,7 @@ function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions</h1>
+            <h1 className="h2 mb-4">So funktioniert's</h1>
             <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
           </div>
 
@@ -43,8 +43,11 @@ function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa.</p>
+                <h3 className="h3 mb-3">Kilometer eintragen</h3>
+                <p className="text-xl text-gray-600">
+                  Das Ziel ist es, zusammen einmal durch China zu laufen. Dafür tragen alle Teilnehmer ihre Strecke in unserer App ein.
+                  Wie das funktioniert, erklären wir hier:
+                  </p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -54,8 +57,11 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">1. Laufen gehen + Tracken</div>
+                    <div className="text-gray-600">
+                      Egal ob du einen Spaziergang machst, joggst oder auch mit dem Fahrrad fährst, alle diese Kilometer können gezählt werden.
+                      Vergiss nur nicht, die Strecke mit einer App deiner Wahl zu tracken!
+                    </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -69,8 +75,10 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">2. Strecke eintragen</div>
+                    <div className="text-gray-600">
+                      Trag deine zurückgelegten Kilometer in der App ein und lade einen Screenshot hoch.
+                    </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -84,8 +92,10 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">3. Zusammen vorankommen</div>
+                    <div className="text-gray-600">
+                      Die Inhalte werden immer an den einzelnen Stationen für alle freigeschaltet.
+                      </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -112,8 +122,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={FeaturesBg} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                    <img className="md:max-w-none mx-auto rounded" src="https://images.unsplash.com/photo-1595392312394-0a1d14c9dadb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -146,8 +155,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={FeaturesBg} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                    <img className="md:max-w-none mx-auto rounded" src="https://images.unsplash.com/photo-1510332981392-36692ea3a195?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
               </div>
