@@ -31,8 +31,14 @@ $aos-distance: 10px;
   position: relative;
   width: 100%;
   overflow: hidden;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
+  padding-top: 140%; /* 1:1 Aspect Ratio */
 }
+
+@media only screen and (min-width: 600px) {
+    .container {
+        padding-top: 80%;
+    }
+  }
 
 .responsive-iframe {
   position: absolute;

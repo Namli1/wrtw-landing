@@ -10,6 +10,7 @@ export default defineConfig({
   css: {
     postcss,
   },
+  base: '/wrtw-landing/',
   plugins: [react()],
   resolve: {
     alias: [
