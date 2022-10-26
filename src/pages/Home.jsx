@@ -7,10 +7,13 @@ import FeaturesBlocks from '../partials/FeaturesBlocks';
 import Testimonials from '../partials/Testimonials';
 import Newsletter from '../partials/Newsletter';
 import Footer from '../partials/Footer';
+import Download from '../partials/Download';
+
+import '.././css/style.scss';
 
 function Home() {
   return (
-    <div className="flex flex-col min-h-screen overflow-hidden">
+    <div className="flex flex-col min-h-screen overflow-hidden theme-background">
 
       {/*  Site header */}
       {/* <Header /> */}
@@ -22,13 +25,14 @@ function Home() {
         <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
-        <Testimonials />
+        {/* <Testimonials /> */}
+        {/* <Download /> */}
         <Newsletter />
 
       </main>
 
       {/*  Site footer */}
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   );

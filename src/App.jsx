@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import {
   Routes,
   Route,
-  useLocation
+  useLocation,
+  Link
 } from 'react-router-dom';
 
+import 'aos/dist/aos.css';
 import './css/style.scss';
 
 import AOS from 'aos';
@@ -13,6 +15,8 @@ import Home from './pages/Home';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import PrivacyPolicyApp from './pages/PrivacyPolicyApp';
 
 function App() {
 
@@ -40,6 +44,8 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy-app" element={<PrivacyPolicyApp />} />
       </Routes>
     </>
   );

@@ -1,19 +1,15 @@
 import React, { useEffect } from 'react';
 
-function aidaform() {
-  (function(){var r,d=document,gt=d.getElementById,cr=d.createElement,tg=d.getElementsByTagName,id="aidaform-embed";if(!gt.call(d,id)){r=cr.call(d,"script");r.id=id;r.src="https://embed.aidaform.com/embed.js";(d.head || tg.call(d,"head")[0]).appendChild(r);}})();
-}
-
-function Newsletter() {
+function Download() {
   useEffect
 
   return (
-    <section id="email-list">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6" id="email-list">
         <div className="pb-12 md:pb-20">
 
           {/* CTA box */}
-          <div className="relative bg-green-800 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden" data-aos="zoom-y-out">
+          <div className="relative bg-gray-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden" data-aos="zoom-y-out">
 
             {/* Background illustration */}
             <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" aria-hidden="true">
@@ -45,20 +41,39 @@ function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Werde Teil der Challenge</h3>
-                <p className="text-gray-300 text-lg mb-6">Einfach deine E-Mail eingeben und wir benachrichtigen dich, wenn es losgeht!</p>
+                <h3 className="h3 text-white mb-2">Mach bei der Lauf-Challenge mit!</h3>
+                <p className="text-gray-300 text-lg mb-6">Auf Apple oder in der Web-Version benutzen. Die Android-App ist auf dem Weg!</p>
 
 
-              <div class="container">
-                <iframe className="responsive-iframe" src="https://weruntheworld.aidaform.com/we-run-the-world-2023" frameBorder="0" marginHeight="0" marginWidth="0">
-                  Loading...
-                </iframe>
+              <div>
+                <a href="https://apps.apple.com/de/app/we-run-the-world/id1633202432">
+                <div className='flex items-center justify-center py-4'>
+                    <img height="30" width='250'
+                    src="https://www.automotive-iq.com/images/apple_store_icon.png">
+                    </img>
+                </div>
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=com.tilman.wrtw">
+                <div className='flex items-center justify-center py-4'>
+                    <img height="30" width='250' 
+                    src="https://play.google.com/intl/en_us/badges/static/images/badges/de_badge_web_generic.png">
+                    </img>
+                </div>
+                </a>
+
+                <a href='https://wrtw.de'>
+                    <div className='py-3'>
+                        <h2 className='h3 text-white text-center underline underline-offset-2'>Web-Version (wrtw.de) &#8599;</h2>
+                    </div>
+                </a>
+                
               </div>
 
               {/* <div class="container">
                 <iframe class="responsive-iframe" src="https://docs.google.com/forms/d/e/1FAIpQLScI74OhkRY-lgIybjBXkb1TE7P2xxVVvMJz9pOWjsPLqbnNEQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
               </div> */}
-                <p className="text-sm text-gray-400 mt-3">Deine E-Mail wird nur so lange gespeichert, bis die App veröffentlicht wird und wir werden, außer der Benachrichtigung, keine Werbung verschicken.</p>
+                {/* <p className="text-sm text-gray-400 mt-3">Deine E-Mail wird nur so lange gespeichert, bis die App veröffentlicht wird und wir werden, außer der Benachrichtigung, keine Werbung verschicken.</p> */}
 
                 {/* CTA form */}
                 {/* <form className="w-full lg:w-auto">
@@ -83,4 +98,4 @@ function Newsletter() {
   );
 }
 
-export default Newsletter;
+export default Download;

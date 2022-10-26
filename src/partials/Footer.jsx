@@ -17,9 +17,9 @@ function Footer() {
                 <svg className="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <defs>
                     <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="footer-logo">
-                      <stop stopColor="#4FD1C5" offset="0%" />
-                      <stop stopColor="#81E6D9" offset="25.871%" />
-                      <stop stopColor="#338CF5" offset="100%" />
+                      <stop stopColor="#a88289" offset="0%" />
+                      <stop stopColor="#9e5c6a" offset="25.871%" />
+                      <stop stopColor="#69303c" offset="100%" />
                     </radialGradient>
                   </defs>
                   <rect width="32" height="32" rx="16" fill="url(#footer-logo)" fillRule="nonzero" />
@@ -27,12 +27,18 @@ function Footer() {
               </Link>
             </div>
             <div className="text-sm text-gray-600">
-              <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> · <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
+              {/* <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> 
+              ·  */}
+              <Link to="/privacy-policy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">
+                Datenschutzerklärung &#38; Impressum
+                </Link>
             </div>
           </div>
 
+
+ 
           {/* 2nd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Products</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -51,10 +57,10 @@ function Footer() {
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Command-line</Link>
               </li>                            
             </ul>
-          </div>
+          </div>  */}
 
           {/* 3rd block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -73,10 +79,10 @@ function Footer() {
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Partners</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* 4th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Company</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -95,10 +101,10 @@ function Footer() {
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Privacy Policy</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* 5th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
+          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
             <h6 className="text-gray-800 font-medium mb-2">Subscribe</h6>
             <p className="text-sm text-gray-600 mb-4">Get the latest news and articles to your inbox every month.</p>
             <form>
@@ -113,21 +119,21 @@ function Footer() {
                         <path d="M11.707 5.293L7 .586 5.586 2l3 3H0v2h8.586l-3 3L7 11.414l4.707-4.707a1 1 0 000-1.414z" fillRule="nonzero" />
                       </svg>
                     </button>
-                  </div>
+                  </div> */}
                   {/* Success message */}
                   {/* <p className="mt-2 text-green-600 text-sm">Thanks for subscribing!</p> */}
-                </div>
+                {/* </div>
               </div>
             </form>
-          </div>          
+          </div>           */}
 
         </div>
 
         {/* Bottom area */}
-        <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200">
+        {/* <div className="md:flex md:items-center md:justify-between py-4 md:py-8 border-t border-gray-200"> */}
 
           {/* Social links */}
-          <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+          {/* <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li>
               <Link to="#" className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Twitter">
                 <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -149,12 +155,12 @@ function Footer() {
                 </svg>
               </Link>
             </li>
-          </ul>
+          </ul> */}
 
           {/* Copyrights note */}
-          <div className="text-sm text-gray-600 mr-4">Made by <a className="text-blue-600 hover:underline" href="https://cruip.com/">Cruip</a>. All rights reserved.</div>
+          {/* <div className="text-sm text-gray-600 mr-4">Made by <a className="text-blue-600 hover:underline" href="https://cruip.com/">Cruip</a>. All rights reserved.</div> */}
 
-        </div>
+        {/* </div> */}
 
       </div>
     </footer>

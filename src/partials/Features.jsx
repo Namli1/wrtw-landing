@@ -3,6 +3,9 @@ import Transition from '../utils/Transition';
 
 import FeaturesBg from '../images/features-bg.png';
 import FeaturesElement from '../images/features-element.png';
+import Screenshot from '../images/screenshot.png';
+import ScreenshotRoute from '../images/screenshot-route.png';
+import DestinationSVG from '../images/destination.svg';
 
 function Features() {
 
@@ -25,8 +28,8 @@ function Features() {
     <section className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      {/* <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
+      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div> */}
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
@@ -34,7 +37,10 @@ function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">So funktioniert's</h1>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <p className="text-xl text-gray-600">
+              Das Ziel ist es, zusammen einmal durch China zu laufen. Dafür tragen alle TeilnehmerInnen ihre Strecke in unserer App ein.
+              Wie das funktioniert, erklären wir hier:
+            </p>
           </div>
 
           {/* Section content */}
@@ -45,8 +51,6 @@ function Features() {
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">Kilometer eintragen</h3>
                 <p className="text-xl text-gray-600">
-                  Das Ziel ist es, zusammen einmal durch China zu laufen. Dafür tragen alle Teilnehmer ihre Strecke in unserer App ein.
-                  Wie das funktioniert, erklären wir hier:
                   </p>
               </div>
               {/* Tabs buttons */}
@@ -60,7 +64,7 @@ function Features() {
                     <div className="font-bold leading-snug tracking-tight mb-1">1. Laufen gehen + Tracken</div>
                     <div className="text-gray-600">
                       Egal ob du einen Spaziergang machst, joggst oder auch mit dem Fahrrad fährst, alle diese Kilometer können gezählt werden.
-                      Vergiss nur nicht, die Strecke mit einer App deiner Wahl zu tracken!
+                      {/* Vergiss nur nicht, die Strecke mit einer App deiner Wahl zu tracken! */}
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -98,9 +102,10 @@ function Features() {
                       </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+                    <img src={DestinationSVG} width={17}></img>
+                    {/* <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z" fill="#191919" fillRule="nonzero" />
-                    </svg>
+                    </svg> */}
                   </div>
                 </a>
               </div>
@@ -138,8 +143,8 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={FeaturesBg} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                    <img className="md:max-w-none mx-auto rounded" src={Screenshot} width="500" height="462" alt="Features bg" />
+                    {/* <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={FeaturesElement} width="500" height="44" alt="Element" style={{ top: '30%' }} /> */}
                   </div>
                 </Transition>
                 {/* Item 3 */}
@@ -155,7 +160,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src="https://images.unsplash.com/photo-1510332981392-36692ea3a195?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80" width="500" height="462" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={ScreenshotRoute} width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
               </div>
